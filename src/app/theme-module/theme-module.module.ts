@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { ThemeRoutingModule } from './theme-routing.module';
 import {MatButtonModule} from '@angular/material/button'
-
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -14,6 +14,7 @@ import {MatButtonModule} from '@angular/material/button'
     CommonModule,
     ThemeRoutingModule,
     MatButtonModule, // for buttons
+    MatIconModule, // for mat icon
   ]
 })
 export class ThemeModuleModule { }
