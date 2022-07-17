@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResumeBuilderComponent } from './components/resume-builder/resume-builder.component';
 import { DragDropComponent } from './components/drag-drop/drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,11 @@ import { DragDropComponent } from './components/drag-drop/drag-drop.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DragDropModule,
+    BrowserAnimationsModule
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]
