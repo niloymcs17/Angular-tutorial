@@ -6,6 +6,7 @@ import { ResumeBuilderComponent } from './components/resume-builder/resume-build
 const routes: Routes = [
   {path:'resume-builder', component: ResumeBuilderComponent},
   {path:'dragdrop', component: DragDropComponent},
+  {path:'themes', loadChildren: () => import('./theme-module/theme-module.module').then(m => m.ThemeModuleModule)},
   {path:'charts',loadChildren: () => import('./chart/chart.module').then(m =>m.ChartModule)},
   {path:'**', redirectTo:'' }
 ];
