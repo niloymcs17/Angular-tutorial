@@ -7,7 +7,6 @@ import { ResumeBuilderComponent } from './components/resume-builder/resume-build
 import { DragDropComponent } from './components/drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DragDropModule,
-    BrowserAnimationsModule
+    DragDropModule, // for drag and drop
+    BrowserAnimationsModule,
   ],
   exports: [
   ],
