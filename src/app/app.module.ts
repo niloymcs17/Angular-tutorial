@@ -4,19 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResumeBuilderComponent } from './components/resume-builder/resume-builder.component';
-import { DragDropComponent } from './modules/drag-drop/drag-drop/drag-drop.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormCreatorComponent } from './modules/dynamic-form-creator/form-creator/form-creator.component';
 @NgModule({
   declarations: [
     AppComponent,
     ResumeBuilderComponent,
-    DragDropComponent
+    FormCreatorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DragDropModule, // for drag and drop
     BrowserAnimationsModule,
   ],
   exports: [
