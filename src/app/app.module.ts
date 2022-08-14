@@ -5,17 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResumeBuilderComponent } from './components/resume-builder/resume-builder.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormCreatorComponent } from './modules/dynamic-form-creator/form-creator/form-creator.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
     ResumeBuilderComponent,
-    FormCreatorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatToolbarModule,
     BrowserAnimationsModule,
+    MatIconModule
   ],
   exports: [
   ],
