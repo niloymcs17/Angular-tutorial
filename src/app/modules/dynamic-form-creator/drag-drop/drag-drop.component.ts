@@ -1,5 +1,6 @@
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, copyArrayItem, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
+import { TextBox } from '../models/controls.interface';
 
 @Component({
   selector: 'app-drag-drop',
@@ -8,25 +9,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DragDropComponent implements OnInit {
 
-  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+  textBox = new TextBox();
 
-  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
+  email = new TextBox();
 
+  todo = [ this.email, this.textBox];
+
+  done = [this.textBox];
+
+  selectedItem: any;
   ngOnInit(): void {
   }
 
-drop(event: CdkDragDrop<string[]>) {
-  console.log(this.done);
-  if (event.previousContainer === event.container) {
-    moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-  } else {
-    transferArrayItem(
-      event.previousContainer.data,
-      event.container.data,
-      event.previousIndex,
-      event.currentIndex,
-    );
+  drop(event: CdkDragDrop<any[]>) {
+    console.log(this.done);
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      this.done[event.currentIndex] = new TextBox();
+      copyArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+      var time = new Date();
+      this.done[event.currentIndex].id = time.toLocaleString('en-US', { dateStyle:'full',timeStyle:'full'}) ;
+    }
   }
-}
+
+  selected(index: number) {
+    this.selectedItem = this.done[index];
+  }
 
 }
