@@ -11,7 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
-    ResumeBuilderComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule
   ],
   exports: [
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
