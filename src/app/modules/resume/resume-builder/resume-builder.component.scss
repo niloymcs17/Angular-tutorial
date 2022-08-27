@@ -1,0 +1,35 @@
+  .header-container>section {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .center {
+    margin: auto;
+    width: 60%;
+    // border: 3px solid #73AD21;
+  }
+
+  .top-30{
+    padding: 30px;
+
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .header-details {
+    display: flex;
+
+  }
+
+  a {
+    padding-top: 4px;
+    margin-right: 20px;
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
