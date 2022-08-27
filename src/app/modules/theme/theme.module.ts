@@ -17,4 +17,4 @@ import {MatIconModule} from '@angular/material/icon';
     MatIconModule, // for mat icon
   ]
 })
-export class ThemeModuleModule { }
+export class ThemeModule { }
