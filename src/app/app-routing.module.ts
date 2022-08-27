@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ResumeBuilderComponent } from './components/resume-builder/resume-builder.component';
 
 const routes: Routes = [
   {path:'resume-builder', loadChildren: () => import('./modules/resume/resume.module').then(m => m.ResumeModule)},
