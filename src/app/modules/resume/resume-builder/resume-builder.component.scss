@@ -6,8 +6,7 @@
   }
 
   .center {
-    margin: auto;
-    width: 60%;
+    text-align: center;
     // border: 3px solid #73AD21;
   }
 
@@ -21,11 +20,8 @@
     font-weight: 400;
   }
 
-  .header-details {
-    display: flex;
 
-  }
-
+  // text decroation href 
   a {
     padding-top: 4px;
     margin-right: 20px;
@@ -33,3 +29,18 @@
     background-color: transparent;
     text-decoration: none;
   }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto 30%;
+    // background-color: #2196F3;
+    padding: 20px;
+  }
+
+  // .grid-item {
+  //   background-color: rgba(255, 255, 255, 0.8);
+  //   border: 1px solid rgba(0, 0, 0, 0.8);
+  //   padding: 20px;
+  //   font-size: 30px;
+  // }
