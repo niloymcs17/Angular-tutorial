@@ -39,7 +39,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
+// RESUME Module ________START_________
 .resume-h1 {
   padding-left: 10px;
   font-weight: 500;
@@ -57,3 +57,18 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
+
+hr.solid {
+  border-top: 3px solid rgb(0, 0, 0);
+}
+
+hr.solid1 {
+  border-top: 2px solid rgb(104, 104, 104);
+  margin:unset;
+}
+
+.resume-image{
+  width: 18px;
+}
+
+// RESUME Module _________END__________

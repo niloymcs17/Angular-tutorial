@@ -4,25 +4,32 @@
 </div>
 
 <div class="center">
-    <mat-icon>mail</mat-icon><a href="mailto: abc@example.com">niloy.mcs17.du@gmail.com</a>
-    <mat-icon>phone</mat-icon><a href="tel:+917602317189">7602317189</a>
-    <img src="../../../../assets/github-logo.png" width="24">
+    <img src="../../../../assets/resume/mail.png" class="resume-image">
+    <a href="mailto: abc@example.com">{{profile.email}}</a>
+    <img src="../../../../assets/resume/phone-call.png" class="resume-image">
+    <a href="tel:+917602317189">{{profile.phone}}</a>
+    <img src="../../../../assets/resume/github-logo.png" class="resume-image">
     <a href="https://github.com/niloymcs17"> GitHub</a>
-    <img src="../../../../assets/linkedin.png" width="24">
+    <img src="../../../../assets/resume/linkedin.png" class="resume-image">
     <a href="https://www.linkedin.com/in/niloy-biswas-278685170/">LinkedIn</a>
-    <img src="../../../../assets/pin.png" width="24">
-    <a>Krishnanagar, West Bengal</a>
+    <img src="../../../../assets/resume/pin.png" class="resume-image">
+    <a>{{profile.address}}</a>
 </div>
 
 <br>
-<mat-divider></mat-divider>
+<hr class="solid">
 <div class="grid-container">
-    <div class="grid-item ">
+    <article class="grid-item ">
         <app-experience></app-experience>
-        <app-education></app-education>
+
         <app-projects></app-projects>
-    </div>
-    <div class="grid-item ">
-        dfshsdfh
-    </div>
+    </article>
+    <aside class="grid-item ">
+        <section>
+            <img src="../../../../assets/resume/user.png" class="resume-image"><span class="resume-h2">About</span>
+            <hr class="solid1">
+        </section>
+        <app-skills></app-skills>
+        <app-education></app-education>
+    </aside>
 </div>
