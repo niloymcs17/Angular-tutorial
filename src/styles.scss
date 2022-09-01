@@ -48,26 +48,37 @@ body {
 
 .resume-h2 {
   padding-left: 10px;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.resume-h3 {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 16px;
+
 }
 
 .resume-date {
   padding-left: 10px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
+  font-style: italic;
+  font-family: cursive;
+  color: #1c1c1c;
 }
 
 hr.solid {
   border-top: 3px solid rgb(0, 0, 0);
 }
 
-hr.solid1 {
+hr.solid2 {
   border-top: 2px solid rgb(104, 104, 104);
-  margin:unset;
+  margin: unset;
 }
 
-.resume-image{
+.resume-image {
   width: 18px;
 }
 

@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
+  skills = [
+    "Angular (3years)"
+    , "Html, CSS, JavaScript (3years)"
+    , "Java (basic)"
+    , "Devops (basic)"
+    , "React (basic)"
+    , "Cloud (basic)"
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
