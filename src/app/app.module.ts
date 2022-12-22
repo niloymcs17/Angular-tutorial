@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { BinaryTreeViewComponent } from './components/binary-tree-view/binary-tree-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BinaryTreeViewComponent,
   ],
   imports: [
     BrowserModule,
